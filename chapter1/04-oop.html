@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="05-IO.html" />
+    <link rel="next" href="05-decorator.html" />
     
     
     <link rel="prev" href="03-package.html" />
@@ -226,12 +226,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="05-IO.html">
+        <li class="chapter " data-level="1.3.5" data-path="05-decorator.html">
             
-                <a href="05-IO.html">
+                <a href="05-decorator.html">
             
                     
-                    05-IO
+                    05-decorator
             
                 </a>
             
@@ -239,12 +239,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="06-exp.html">
+        <li class="chapter " data-level="1.3.6" data-path="06-IO.html">
             
-                <a href="06-exp.html">
+                <a href="06-IO.html">
             
                     
-                    06-exp
+                    06-IO
             
                 </a>
             
@@ -252,12 +252,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="07-command.html">
+        <li class="chapter " data-level="1.3.7" data-path="07-exp.html">
             
-                <a href="07-command.html">
+                <a href="07-exp.html">
             
                     
-                    07-command
+                    07-exp
             
                 </a>
             
@@ -265,12 +265,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="08-test.html">
+        <li class="chapter " data-level="1.3.8" data-path="08-command.html">
             
-                <a href="08-test.html">
+                <a href="08-command.html">
             
                     
-                    08-test
+                    08-command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="09-test.html">
+            
+                <a href="09-test.html">
+            
+                    
+                    09-test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10-practice.html">
+            
+                <a href="10-practice.html">
+            
+                    
+                    10-practice
             
                 </a>
             
@@ -341,7 +367,135 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="04-oop">04-oop</h1>
+                                <h1 id="python&#x4E2D;&#x7EA7;">python&#x4E2D;&#x7EA7;</h1>
+<h1 id="04-oop">04-oop</h1>
+<blockquote>
+<p>&#x56DE;&#x987E;&#x7A0B;&#x5E8F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;,&#x7A0B;&#x5E8F;&#x5C31;&#x662F;&#x6570;&#x636E;&#x548C;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x64CD;&#x4F5C;&#x903B;&#x8F91;</p>
+</blockquote>
+<ul>
+<li>&#x73B0;&#x5728;&#x4F60;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x548C;&#x68C0;&#x7D22;&#x4EFB;&#x52A1;&#x6570;&#x636E; <ul>
+<li>&#x4EFB;&#x52A1;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x5B58;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;</li>
+<li>&#x4EFB;&#x52A1;&#x6570;&#x636E;&#x96C6;&#x5408;&#x4F7F;&#x7528;&#x5217;&#x8868; &#x5143;&#x7956;&#x6216;&#x96C6;&#x5408;&#x5B58;&#x50A8;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># coding=UTF-8</span>
+<span class="hljs-comment"># &#x811A;&#x672C;&#x4E2D;&#x6709;&#x4E2D;&#x6587;&#x4F7F;&#x7528;</span>
+
+<span class="hljs-comment"># &#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x4EFB;&#x52A1;&#x6570;&#x636E; </span>
+s1 = <span class="hljs-string">&apos;work schedule&apos;</span>
+s2 = <span class="hljs-string">&apos;person schedule&apos;</span>
+s3 = <span class="hljs-string">&apos;play schedule&apos;</span>
+
+<span class="hljs-comment"># &#x7528;&#x5143;&#x7956; &#x5217;&#x8868; &#x96C6;&#x5408;&#x5B58;&#x50A8;&#x4EFB;&#x52A1;&#x6570;&#x636E;&#x96C6;&#x5408;</span>
+tasks = [s1,s2,s3]
+
+print(tasks)
+print(s1,type(s1))
+print(s2,type(s2))
+print(s3,type(s3))
+</code></pre>
+<blockquote>
+<p>1 &#x8FD9;&#x79CD;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;&#x5E94;&#x5BF9;&#x7B80;&#x5355;&#x60C5;&#x51B5;&#x662F;&#x53EF;&#x4EE5;&#x7684;
+2 &#x4F46;&#x662F;&#x5982;&#x679C;&#x8981;&#x6DFB;&#x52A0;&#x65B0;&#x5C5E;&#x6027;,&#x65E7;&#x7684;&#x4EE3;&#x7801;&#x65E0;&#x6CD5;&#x5904;&#x7406;</p>
+</blockquote>
+<ul>
+<li>&#x56E0;&#x6B64;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x6700;&#x597D;&#x5E26;&#x4E00;&#x4E9B;&#x7ED3;&#x6784;,&#x8FD9;&#x5C31;&#x662F;OOP</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Schedule</span><span class="hljs-params">(object)</span>:</span>
+
+    name = <span class="hljs-keyword">None</span>
+    desp = <span class="hljs-keyword">None</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, n, d)</span>:</span>
+        self.name = n
+        self.desp = d
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Schedule %s, %s&apos;</span> % (self.name, self.desp)
+</code></pre>
+<blockquote>
+<p>1 &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x53EB;<code>Schedule</code>,&#x7C7B;&#x597D;&#x6BD4;&#x5EFA;&#x7B51;&#x7684;&#x84DD;&#x56FE;,&#x800C;&#x4E0D;&#x662F;&#x5EFA;&#x7B51;&#x672C;&#x8EAB;,&#x4ED6;&#x5305;&#x542B;&#x600E;&#x4E48;&#x53BB;&#x5EFA;&#x9020;&#x4ED6;
+2 Python&#x4E2D;&#x6BCF;&#x4E2A;&#x7C7B;&#x90FD;&#x6709;&#x5185;&#x7F6E;&#x7684;&#x65B9;&#x6CD5;,&#x5982;<code>__init__</code>&#x544A;&#x8BC9;&#x4F60;&#x5982;&#x4F55;&#x5C06;&#x7C7B;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x5BF9;&#x8C61;
+3 <code>__str__</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5BF9;&#x8C61;&#x4E2D;&#x53EF;&#x8BFB;&#x7684;&#x4FE1;&#x606F;
+4 <code>name</code>&#x548C;<code>desp</code>&#x662F;&#x7C7B;<code>Schedule</code>&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+</blockquote>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;&#x7C7B;&#x4E3A;&#x5BF9;&#x8C61; </li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5B9E;&#x4F8B;&#x5316;&#x7C7B; </span>
+s1 = Schedule(<span class="hljs-string">&apos;s1&apos;</span>, <span class="hljs-string">&apos;work schedule&apos;</span>)
+s2 = Schedule(<span class="hljs-string">&apos;s2&apos;</span>, <span class="hljs-string">&apos;personal schedule&apos;</span>)
+s3 = Schedule(<span class="hljs-string">&apos;s3&apos;</span>, <span class="hljs-string">&apos;play schedule&apos;</span>)
+
+print(s1,type(s1))
+print(s2,type(s2))
+print(s3,type(s3))
+
+print(s1.desp)
+print(s2.desp)
+print(s3.desp)
+
+print(s1)
+print(s2)
+print(s3)
+</code></pre>
+<blockquote>
+<p>1 &#x901A;&#x8FC7;&#x7C7B;&#x521B;&#x5EFA;&#x4E86;&#x4E09;&#x4E2A;&#x5BF9;&#x8C61; <code>s1</code>,<code>s2</code>,<code>s3</code>
+2 &#x6253;&#x5370;&#x5BF9;&#x8C61;&#x81EA;&#x52A8;&#x89E6;&#x53D1;<code>__str__</code>&#x6267;&#x884C;
+3 <code>self</code>&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x53D8;&#x91CF;,&#x4ED6;&#x6307;&#x5411;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x81EA;&#x5DF1;</p>
+</blockquote>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x7C7B;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x65B9;&#x6CD5;&#x6765;&#x589E;&#x52A0;&#x4ED6;&#x7684;&#x529F;&#x80FD;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Schedule</span><span class="hljs-params">(object)</span>:</span>
+
+    name = <span class="hljs-keyword">None</span>
+    desp = <span class="hljs-keyword">None</span>
+    tasks = <span class="hljs-keyword">None</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, n, d)</span>:</span>
+        self.name = n
+        self.desp = d
+        self.tasks = {}
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_task</span><span class="hljs-params">(self, name, content, priority)</span>:</span>
+        <span class="hljs-keyword">if</span> name <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> self.tasks:
+            task = [name, priority, content]
+            self.tasks.update({name: task})
+        self.display()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_task</span><span class="hljs-params">(self, name)</span>:</span>
+        <span class="hljs-keyword">if</span> name <span class="hljs-keyword">in</span> self.tasks:
+            self.tasks.pop(name, <span class="hljs-keyword">None</span>)
+        self.display()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">display</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">if</span> self.tasks:
+            print(<span class="hljs-string">&apos;here are your tasks:&apos;</span>)
+            <span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> self.tasks.values():
+                print(<span class="hljs-string">&apos;%-10s %-5s %-50s&apos;</span> % (v[<span class="hljs-number">0</span>], v[<span class="hljs-number">2</span>], v[<span class="hljs-number">1</span>]))
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Schedule %s, %s&apos;</span> % (self.name, self.desp)
+
+<span class="hljs-comment"># &#x5B9E;&#x4F8B;&#x5316;&#x7C7B;</span>
+s1 = Schedule(<span class="hljs-string">&apos;s1&apos;</span>,<span class="hljs-string">&apos;work schedule&apos;</span>)
+s2 = Schedule(<span class="hljs-string">&apos;s2&apos;</span>,<span class="hljs-string">&apos;personal schedule&apos;</span>)
+s3 = Schedule(<span class="hljs-string">&apos;s3&apos;</span>,<span class="hljs-string">&apos;play schedule&apos;</span>)
+
+
+print(s1,type(s1))
+print(s2,type(s2))
+print(s3,type(s3))
+
+print(s1.desp)
+print(s2.desp)
+print(s3.desp)
+</code></pre>
+<blockquote>
+<p>&#x4EE5;&#x4E0A;&#x7C7B;&#x5177;&#x6709;&#x4E86;&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;&#x4EFB;&#x52A1;&#x7684;&#x529F;&#x80FD;&#x4E86;</p>
+</blockquote>
 
                                 
                                 </section>
@@ -374,7 +528,7 @@
                 </a>
                 
                 
-                <a href="05-IO.html" class="navigation navigation-next " aria-label="Next page: 05-IO">
+                <a href="05-decorator.html" class="navigation navigation-next " aria-label="Next page: 05-decorator">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -385,7 +539,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"04-oop","level":"1.3.4","depth":2,"next":{"title":"05-IO","level":"1.3.5","depth":2,"path":"chapter1/05-IO.md","ref":"chapter1/05-IO.md","articles":[]},"previous":{"title":"03-package","level":"1.3.3","depth":2,"path":"chapter1/03-package.md","ref":"chapter1/03-package.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/04-oop.md","mtime":"2018-03-06T03:40:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-06T12:38:31.141Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"04-oop","level":"1.3.4","depth":2,"next":{"title":"05-decorator","level":"1.3.5","depth":2,"path":"chapter1/05-decorator.md","ref":"chapter1/05-decorator.md","articles":[]},"previous":{"title":"03-package","level":"1.3.3","depth":2,"path":"chapter1/03-package.md","ref":"chapter1/03-package.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/04-oop.md","mtime":"2018-03-09T01:39:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-09T01:56:53.007Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
