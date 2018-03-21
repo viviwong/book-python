@@ -320,6 +320,193 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter2/01-List-Comprehension.html">
+            
+                <a href="../chapter2/01-List-Comprehension.html">
+            
+                    
+                    01-List-Comprehension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/02-HTTP-Networking.html">
+            
+                <a href="../chapter2/02-HTTP-Networking.html">
+            
+                    
+                    02-HTTP-Networking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/03-JSON-Manipulation.html">
+            
+                <a href="../chapter2/03-JSON-Manipulation.html">
+            
+                    
+                    03-JSON-Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/04-Multi-threading.html">
+            
+                <a href="../chapter2/04-Multi-threading.html">
+            
+                    
+                    04-Multi-threading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter2/05-Queue.html">
+            
+                <a href="../chapter2/05-Queue.html">
+            
+                    
+                    05-Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter2/06-Coding-Style.html">
+            
+                <a href="../chapter2/06-Coding-Style.html">
+            
+                    
+                    06-Coding-Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter2/07-Networking&Crawling.html">
+            
+                <a href="../chapter2/07-Networking&Crawling.html">
+            
+                    
+                    07-Networking&Crawling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    Chapter3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/01-.html">
+            
+                <a href="../chapter3/01-.html">
+            
+                    
+                    01-
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/02-.html">
+            
+                <a href="../chapter3/02-.html">
+            
+                    
+                    02-
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    Chapter4
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter4/01-.html">
+            
+                <a href="../chapter4/01-.html">
+            
+                    
+                    01-
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter4/02-.html">
+            
+                <a href="../chapter4/02-.html">
+            
+                    
+                    02-
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
 
@@ -373,22 +560,60 @@
 <p>python&#x811A;&#x672C;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x8C03;&#x7528;</p>
 </blockquote>
 <ul>
-<li>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;<code>command.py</code></li>
+<li>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;<code>touch command.py</code>,&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x6267;&#x884C;<code>python command.py 1 2</code></li>
 </ul>
-<pre><code class="lang-python"><span class="hljs-keyword">import</span> sys
+<pre><code class="lang-python"><span class="hljs-comment"># coding=UTF-8</span>
+<span class="hljs-keyword">import</span> sys
 
 <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    <span class="hljs-comment"># python&#x5C06;&#x6587;&#x4EF6;&#x540D; &#x53C2;&#x6570;1 &#x53C2;&#x6570;2 ...&#x4EE5;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x653E;&#x5728;sys.argv&#x4E2D;</span>
     args = sys.argv
     a1 = args[<span class="hljs-number">1</span>]
     a2 = args[<span class="hljs-number">2</span>]
 
-print(a1,a2)
+    print(args,a1,a2) <span class="hljs-comment"># ([&apos;command.py&apos;, &apos;1&apos;, &apos;2&apos;], &apos;1&apos;, &apos;2&apos;)</span>
 </code></pre>
 <blockquote>
 <p>1 &#x901A;&#x8FC7;sys.agv&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x5217;&#x8868; <br>
 2 python command.py hello world <br>
 3 args[0] = command.py args[1] = hello args[2] = world  <br></p>
 </blockquote>
+<ul>
+<li>&#x8BA4;&#x8BC6;<code>if __name__ == &apos;__main__&apos;:</code></li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># coding=UTF-8</span>
+<span class="hljs-keyword">import</span> sys
+
+print(<span class="hljs-string">&quot;1 &#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x8C03;&#x7528;&quot;</span>)
+
+<span class="hljs-comment"># &#x5F53;command.py&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x65F6;,if&#x4E4B;&#x4E0B;&#x7684;&#x5185;&#x5BB9;&#x88AB;&#x8C03;&#x7528;&#x6267;&#x884C;;&#x5F53;command.py&#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x88AB;&#x8C03;&#x7528;&#x65F6;,if&#x4E4B;&#x4E0B;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x88AB;&#x6267;&#x884C;</span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    <span class="hljs-comment"># python&#x5C06;&#x6587;&#x4EF6;&#x540D; &#x53C2;&#x6570;1 &#x53C2;&#x6570;2 ...&#x4EE5;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x653E;&#x5728;sys.argv&#x4E2D;</span>
+    args = sys.argv
+    a1 = args[<span class="hljs-number">1</span>]
+    a2 = args[<span class="hljs-number">2</span>]
+
+    print(args,a1,a2) <span class="hljs-comment"># ([&apos;command.py&apos;, &apos;1&apos;, &apos;2&apos;], &apos;1&apos;, &apos;2&apos;)</span>
+
+    print(<span class="hljs-string">&quot;2 command.py&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x65F6;&#x5019;&#x88AB;&#x8C03;&#x7528;&quot;</span>)
+</code></pre>
+<ul>
+<li>&#x547D;&#x4EE4;&#x884C;&#x6267;&#x884C;<code>python command.py 1 2</code>&#x7ED3;&#x679C;&#x4E3A; </li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-number">1</span> &#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x8C03;&#x7528;
+([<span class="hljs-string">&apos;command.py&apos;</span>, <span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-string">&apos;2&apos;</span>], <span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-string">&apos;2&apos;</span>)
+<span class="hljs-number">2</span> command.py&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x65F6;&#x5019;&#x88AB;&#x8C03;&#x7528;
+</code></pre>
+<ul>
+<li>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6; <code>touch new.py</code></li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> command
+</code></pre>
+<ul>
+<li>&#x6267;&#x884C;<code>python new.py</code>&#x67E5;&#x770B;&#x7ED3;&#x679C;&#x4E3A; </li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-number">1</span> &#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x8C03;&#x7528;
+</code></pre>
 
                                 
                                 </section>
@@ -432,7 +657,7 @@ print(a1,a2)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"08-command","level":"1.3.8","depth":2,"next":{"title":"09-test","level":"1.3.9","depth":2,"path":"chapter1/09-test.md","ref":"chapter1/09-test.md","articles":[]},"previous":{"title":"07-exp","level":"1.3.7","depth":2,"path":"chapter1/07-exp.md","ref":"chapter1/07-exp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/08-command.md","mtime":"2018-03-09T02:29:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-09T02:32:00.461Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"08-command","level":"1.3.8","depth":2,"next":{"title":"09-test","level":"1.3.9","depth":2,"path":"chapter1/09-test.md","ref":"chapter1/09-test.md","articles":[]},"previous":{"title":"07-exp","level":"1.3.7","depth":2,"path":"chapter1/07-exp.md","ref":"chapter1/07-exp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/08-command.md","mtime":"2018-03-21T07:07:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T08:22:05.264Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -440,6 +665,10 @@ print(a1,a2)
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

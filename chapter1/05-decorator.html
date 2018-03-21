@@ -320,6 +320,193 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter2/01-List-Comprehension.html">
+            
+                <a href="../chapter2/01-List-Comprehension.html">
+            
+                    
+                    01-List-Comprehension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/02-HTTP-Networking.html">
+            
+                <a href="../chapter2/02-HTTP-Networking.html">
+            
+                    
+                    02-HTTP-Networking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/03-JSON-Manipulation.html">
+            
+                <a href="../chapter2/03-JSON-Manipulation.html">
+            
+                    
+                    03-JSON-Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/04-Multi-threading.html">
+            
+                <a href="../chapter2/04-Multi-threading.html">
+            
+                    
+                    04-Multi-threading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter2/05-Queue.html">
+            
+                <a href="../chapter2/05-Queue.html">
+            
+                    
+                    05-Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter2/06-Coding-Style.html">
+            
+                <a href="../chapter2/06-Coding-Style.html">
+            
+                    
+                    06-Coding-Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter2/07-Networking&Crawling.html">
+            
+                <a href="../chapter2/07-Networking&Crawling.html">
+            
+                    
+                    07-Networking&Crawling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    Chapter3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/01-.html">
+            
+                <a href="../chapter3/01-.html">
+            
+                    
+                    01-
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/02-.html">
+            
+                <a href="../chapter3/02-.html">
+            
+                    
+                    02-
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    Chapter4
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter4/01-.html">
+            
+                <a href="../chapter4/01-.html">
+            
+                    
+                    01-
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter4/02-.html">
+            
+                <a href="../chapter4/02-.html">
+            
+                    
+                    02-
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
 
@@ -367,107 +554,142 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="05-decorator">05-decorator</h1>
+                                <h1 id="python&#x4E2D;&#x7EA7;">python&#x4E2D;&#x7EA7;</h1>
+<h1 id="05-decorator">05-decorator</h1>
 <blockquote>
 <p>&#x8FD9;&#x79CD;&#x91CC;&#x9762;&#x5305;&#x542B;&#x51FD;&#x6570;,&#x7136;&#x540E;&#x4FEE;&#x6539;&#x4ED6;&#x4F7F;&#x7528;&#x524D;&#x548C;&#x4F7F;&#x7528;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x53EB;<code>&#x88C5;&#x9970;&#x5668;</code></p>
 </blockquote>
 <ul>
 <li>&#x4EFB;&#x52A1;&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;&#x7684;&#x65F6;&#x95F4;</li>
 </ul>
-<pre><code class="lang-python"><span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4EFB;&#x52A1;+&#x63CF;&#x8FF0; &#x52A0;&#x4E0A;&#x529F;&#x80FD; &#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4EFB;&#x52A1;&#x5185;&#x5BB9;&#x548C;&#x4F18;&#x5148;&#x7EA7; &#x6DFB;&#x52A0;&#x65F6;&#x95F4;&#x663E;&#x793A;</span>
 
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+
+<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x65F6;&#x95F4;&#x663E;&#x793A;&#x51FD;&#x6570;</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">display_time</span><span class="hljs-params">()</span>:</span>
     print(str(datetime.now()))
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Schedule</span><span class="hljs-params">(object)</span>:</span>
-
     name = <span class="hljs-keyword">None</span>
     desp = <span class="hljs-keyword">None</span>
     tasks = <span class="hljs-keyword">None</span>
 
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, n, d)</span>:</span>
+    <span class="hljs-comment"># 1 &#x7C7B;&#x7684;&#x521D;&#x59CB;&#x5316;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,n,d)</span>:</span>
         self.name = n
         self.desp = d
         self.tasks = {}
 
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_task</span><span class="hljs-params">(self, name, content, priority)</span>:</span>
+    <span class="hljs-comment"># 2 &#x6253;&#x5370;&#x5BF9;&#x8C61;&#x8F93;&#x51FA;&#x5185;&#x5BB9;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;schdule1 %s %s&quot;</span> % (self.name,self.desp)
+
+    <span class="hljs-comment"># 3 &#x6DFB;&#x52A0;&#x4EFB;&#x52A1;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_task</span><span class="hljs-params">(self,name,content,priority)</span>:</span>
         <span class="hljs-keyword">if</span> name <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> self.tasks:
-            task = [name, priority, content]
-            self.tasks.update({name: task})
+            task = [name,content,priority]
+            self.tasks.update({name:task})
         self.display()
+        <span class="hljs-comment">#&#x6DFB;&#x52A0;&#x65F6;&#x95F4;&#x663E;&#x793A;</span>
         display_time()
 
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_task</span><span class="hljs-params">(self, name)</span>:</span>
+    <span class="hljs-comment"># 4 &#x5220;&#x9664;&#x4EFB;&#x52A1;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_task</span><span class="hljs-params">(self,name)</span>:</span>
         <span class="hljs-keyword">if</span> name <span class="hljs-keyword">in</span> self.tasks:
-            self.tasks.pop(name, <span class="hljs-keyword">None</span>)
+            <span class="hljs-keyword">del</span> self.tasks[name]
         self.display()
+        <span class="hljs-comment"># &#x5220;&#x9664;&#x65F6;&#x95F4;&#x663E;&#x793A;</span>
         display_time()
 
+    <span class="hljs-comment"># 5 &#x663E;&#x793A;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">display</span><span class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">if</span> self.tasks:
-            print(<span class="hljs-string">&apos;here are your tasks:&apos;</span>)
+            print(<span class="hljs-string">&quot;your tasks is below: &quot;</span>)
+            print(<span class="hljs-string">&quot;&#x4EFB;&#x52A1;&#x540D;   ,  &#x4F18;&#x5148;&#x7EA7; , &#x4EFB;&#x52A1;&#x5185;&#x5BB9;&quot;</span>)
             <span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> self.tasks.values():
-                print(<span class="hljs-string">&apos;%-10s %-5s %-50s&apos;</span> % (v[<span class="hljs-number">0</span>], v[<span class="hljs-number">2</span>], v[<span class="hljs-number">1</span>]))
+                print(<span class="hljs-string">&quot;%-10s %-5s %-50s&quot;</span> % (v[<span class="hljs-number">0</span>],v[<span class="hljs-number">2</span>],v[<span class="hljs-number">1</span>]))
+        <span class="hljs-keyword">else</span>:
+            print(<span class="hljs-string">&quot;your tasks is null&quot;</span>)
 
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Schedule %s, %s&apos;</span> % (self.name, self.desp)
+<span class="hljs-comment">#&#x7C7B;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x5BF9;&#x8C61;</span>
+s6 = Schedule(<span class="hljs-string">&apos;&#x4EFB;&#x52A1;2&apos;</span>,<span class="hljs-string">&apos;&#x4EFB;&#x52A1;2&#x7684;&#x63CF;&#x8FF0;&apos;</span>)
+print(s6)
 
-s = Schedule(<span class="hljs-string">&apos;s1&apos;</span>, <span class="hljs-string">&apos;ITschool&apos;</span>)
-s.add_task(<span class="hljs-string">&apos;cs&apos;</span>, <span class="hljs-string">&apos;teach introduction to python course&apos;</span>, <span class="hljs-number">1000</span>)
+<span class="hljs-comment">#&#x6DFB;&#x52A0;&#x4EFB;&#x52A1;</span>
+s6.add_task(<span class="hljs-string">&quot;&#x4EFB;&#x52A1;2&quot;</span>,<span class="hljs-string">&quot;&#x6253;&#x8C46;&#x8C46;&quot;</span>,<span class="hljs-number">1</span>)
+
+<span class="hljs-comment"># &#x5220;&#x9664;&#x4EFB;&#x52A1;</span>
+s6.remove_task(<span class="hljs-string">&quot;&#x4EFB;&#x52A1;2&quot;</span>)
 </code></pre>
 <blockquote>
 <p>python&#x4E2D;&#x51FD;&#x6570;&#x662F;<code>&#x4E00;&#x7EA7;&#x5BF9;&#x8C61;</code>,&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;</p>
 </blockquote>
 <ul>
-<li>&#x5C06;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x8FDB;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</li>
+<li>&#x51FD;&#x6570;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;,&#x51FD;&#x6570;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570; </li>
 </ul>
 <pre><code class="lang-python"><span class="hljs-comment"># coding=UTF-8</span>
 
 <span class="hljs-comment"># &#x51FD;&#x6570;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x51FD;&#x6570; </span>
 <span class="hljs-comment"># &#x56E0;&#x4E3A;&#x51FD;&#x6570;&#x662F;&#x5BF9;&#x8C61; &#x6240;&#x4EE5;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x51FD;&#x6570;;&#x597D;&#x6BD4;&#x5BF9;&#x8C61;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x51FD;&#x6570; </span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">answer_to_university</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">give_42</span><span class="hljs-params">()</span>:</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-number">42</span>
-    <span class="hljs-comment"># &#x51FD;&#x6570;answer_to_university&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</span>
-    <span class="hljs-keyword">return</span> give_42
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">outer</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">inner</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-number">666</span>
+    <span class="hljs-comment"># &#x51FD;&#x6570;outer&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x540D;</span>
+    <span class="hljs-keyword">return</span> inner
 
-<span class="hljs-comment"># &#x5C06;&#x51FD;&#x6570;&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;,&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x4ED6;</span>
-answer = answer_to_university()
-
-print(answer_to_university) <span class="hljs-comment"># atu function</span>
-print(answer_to_university()) <span class="hljs-comment"># give_42 function </span>
-print(answer_to_university()()) <span class="hljs-comment"># 42</span>
-print(answer()) <span class="hljs-comment"># 42</span>
+<span class="hljs-comment"># &#x5C06;&#x51FD;&#x6570;outer&#x8D4B;&#x503C;&#x7ED9;var</span>
+var = outer()  
+<span class="hljs-comment"># &#x6253;&#x5370;&#x51FD;&#x6570;&#x540D;</span>
+print(outer)  <span class="hljs-comment"># outer&#x51FD;&#x6570;&#x540D;&#x5BF9;&#x5E94;&#x7684;&#x5730;&#x5740;</span>
+<span class="hljs-comment"># &#x6253;&#x5370;&#x51FD;&#x6570;</span>
+print(outer()) <span class="hljs-comment"># inner&#x51FD;&#x6570;&#x7684;&#x5730;&#x5740;</span>
+<span class="hljs-comment"># &#x6253;&#x5370;&#x51FD;&#x6570;&#x7684;&#x51FD;&#x6570; </span>
+print(outer()()) <span class="hljs-comment"># 666</span>
+<span class="hljs-comment"># &#x6253;&#x5370;&#x53D8;&#x91CF;&#x540D;&#x51FD;&#x6570;</span>
+print(var())   <span class="hljs-comment"># 666</span>
 </code></pre>
+<blockquote>
+<p>1 &#x51FD;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;,&#x6240;&#x6709;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x4E5F;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x51FD;&#x6570; <br>
+2 outer&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570; <br>
+3 &#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x51FD;&#x6570;&#x4F20;&#x7ED9;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF; <br>
+4 &#x51FD;&#x6570;&#x548C;&#x5B57;&#x7B26;&#x4E32; &#x6570;&#x5B57;&#x662F;&#x4E00;&#x6837;&#x7684;&#x4F7F;&#x7528; &#x53EA;&#x4E0D;&#x8FC7;&#x51FD;&#x6570;&#x540E;&#x9762;&#x591A;&#x4E00;&#x4E2A;()</p>
+</blockquote>
 <ul>
-<li>&#x51FD;&#x6570;&#x548C;&#x5B57;&#x7B26;&#x4E32; &#x6570;&#x5B57;&#x662F;&#x4E00;&#x6837;&#x7684;&#x4F7F;&#x7528; &#x53EA;&#x4E0D;&#x8FC7;&#x51FD;&#x6570;&#x540E;&#x9762;&#x591A;&#x4E00;&#x4E2A;()</li>
+<li>&#x88C5;&#x9970;&#x5668;&#x6F14;&#x793A;</li>
+<li>&#x4ECE;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230; </li>
+<li>1 &#x51FD;&#x6570;&#x91CC;&#x9762;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x51FD;&#x6570;</li>
+<li>2 &#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x51FD;&#x6570;</li>
+<li>3 &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x7ED9;&#x53D8;&#x91CF;,&#x90A3;&#x4E48;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E86;</li>
 </ul>
-<pre><code class="lang-python">
-<span class="hljs-comment"># coding=UTF-8</span>
+<ul>
+<li>&#x51FD;&#x6570;display_decorator&#x4F20;&#x9012;&#x53C2;&#x6570;func,&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;wrapper,&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x51FD;&#x6570;wrapper</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># coding=UTF-8</span>
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">display_decorator</span><span class="hljs-params">(func)</span>:</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">()</span>:</span>
         print(<span class="hljs-string">&apos;before func&apos;</span>)
         func()
         print(<span class="hljs-string">&apos;after func&apos;</span>)
+    <span class="hljs-comment"># &#x8FD4;&#x56DE;wrapper&#x51FD;&#x6570;</span>
     <span class="hljs-keyword">return</span> wrapper
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_function</span><span class="hljs-params">()</span>:</span>
     print(<span class="hljs-string">&quot;this is awesome function&quot;</span>)
 
-<span class="hljs-comment"># &#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x51FD;&#x6570;test_function</span>
+<span class="hljs-comment"># &#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x51FD;&#x6570; test_function</span>
 test_function()
 
-<span class="hljs-comment"># &#x901A;&#x8FC7;&#x88C5;&#x9970;&#x5668;&#x4F7F;&#x7528;&#x51FD;&#x6570;</span>
-display_decorator(test_function)() <span class="hljs-comment"># b t a </span>
-
-<span class="hljs-comment"># display_decorator&#x5C31;&#x662F;&#x88C5;&#x9970;&#x5668;</span>
-<span class="hljs-comment"># &#x4ED6;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x51FD;&#x6570; </span>
-<span class="hljs-comment"># &#x5E76;&#x4E14;&#x4FEE;&#x6539;&#x8BE5;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x548C;&#x4E4B;&#x540E;(&#x6DFB;&#x52A0;&#x4E86;before&#x548C;after) </span>
-<span class="hljs-comment"># &#x8FD9;&#x5C31;&#x662F;&#x88C5;&#x9970;&#x5668;</span>
+<span class="hljs-comment"># &#x901A;&#x8FC7;display_decorator&#x4F7F;&#x7528;test_function</span>
+display_decorator(test_function)() <span class="hljs-comment"># before t a</span>
 </code></pre>
 <blockquote>
-<p>&#x8FD9;&#x79CD;&#x91CC;&#x9762;&#x5305;&#x542B;&#x51FD;&#x6570;,&#x7136;&#x540E;&#x4FEE;&#x6539;&#x4ED6;&#x4F7F;&#x7528;&#x524D;&#x548C;&#x4F7F;&#x7528;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x53EB;&#x88C5;&#x9970;&#x5668;</p>
+<p>1 display_decorator&#x5C31;&#x662F;&#x88C5;&#x9970;&#x5668; <br>
+2 &#x4ED6;&#x91CC;&#x9762;&#x5305;&#x88F9;&#x4E86;&#x4E00;&#x4E2A;&#x51FD;&#x6570; func <br> 
+3 &#x5E76;&#x4E14;&#x901A;&#x8FC7;wrapper&#x51FD;&#x6570;&#x4FEE;&#x6539;&#x4E86; func&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x524D;&#x548C;&#x4F7F;&#x7528;&#x540E;&#x7684;&#x5185;&#x5BB9; <br>
+4 &#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x5C31;&#x662F;&#x88C5;&#x9970;&#x5668; <br>
+&#x8FD9;&#x79CD;&#x91CC;&#x9762;&#x5305;&#x88F9;&#x4E00;&#x4E2A;&#x51FD;&#x6570;,&#x7136;&#x540E;&#x4FEE;&#x6539;&#x4ED6;&#x4F7F;&#x7528;&#x524D;&#x548C;&#x4F7F;&#x7528;&#x540E;&#x7684;&#x884C;&#x4E3A;&#x7684;&#x673A;&#x5236;&#x5C31;&#x53EB;<code>&#x88C5;&#x9970;&#x5668;</code></p>
 </blockquote>
 <ul>
 <li>python&#x4E3A;&#x88C5;&#x9970;&#x5668;&#x7684;&#x6613;&#x7528;&#x6027;&#x63D0;&#x4F9B;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;</li>
@@ -502,6 +724,9 @@ test_function() <span class="hljs-comment"># b t a</span>
 <span class="hljs-comment"># display-decorator&#x5C31;&#x662F;&#x88C5;&#x9970;&#x5668;</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">display_decorator</span><span class="hljs-params">(func)</span>:</span>
     <span class="hljs-comment"># *&#x975E;&#x5173;&#x952E;&#x5B57;&#x6536;&#x96C6;&#x53C2;&#x6570;,**&#x5173;&#x952E;&#x5B57;&#x6536;&#x96C6;&#x53C2;&#x6570; </span>
+    <span class="hljs-comment"># func&#x662F;&#x88C5;&#x9970;&#x5668;&#x4F5C;&#x7528;&#x7684;&#x51FD;&#x6570; add_task remove_task</span>
+    <span class="hljs-comment"># &#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x548C;&#x7C7B;&#x578B;&#x90FD;&#x4E0D;&#x786E;&#x5B9A;,&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x6536;&#x96C6;&#x53C2;&#x6570;</span>
+    <span class="hljs-comment"># &#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x53EF;&#x4EE5;&#x53EA;&#x4F7F;&#x7528;* &#x975E;&#x5173;&#x952E;&#x8BCD;&#x6536;&#x96C6;</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">(*args, **kwargs)</span>:</span>
         print(str(datetime.now()))
         <span class="hljs-keyword">return</span> func(*args, **kwargs)
@@ -519,7 +744,7 @@ test_function() <span class="hljs-comment"># b t a</span>
         self.desp = d
         self.tasks = {}
 
-<span class="hljs-comment"># @&#x4F7F;&#x7528;&#x88C5;&#x9970;&#x5668;&#x7684;&#x5FEB;&#x6377;&#x952E;</span>
+    <span class="hljs-comment"># @+&#x88C5;&#x9970;&#x5668; &#x4F7F;&#x7528;&#x88C5;&#x9970;&#x5668;&#x7684;&#x5FEB;&#x6377;&#x952E;</span>
 <span class="hljs-meta">    @display_decorator</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_task</span><span class="hljs-params">(self, name, content, priority)</span>:</span>
         <span class="hljs-keyword">if</span> name <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> self.tasks:
@@ -544,14 +769,18 @@ test_function() <span class="hljs-comment"># b t a</span>
 
 
 s = Schedule(<span class="hljs-string">&apos;s1&apos;</span>,<span class="hljs-string">&apos;ITshcool&apos;</span>)
+<span class="hljs-comment"># &#x5BF9;&#x8C61;s&#x6DFB;&#x52A0;&#x4EFB;&#x52A1;&#x8BE6;&#x60C5;</span>
 s.add_task(<span class="hljs-string">&apos;cs&apos;</span>,<span class="hljs-string">&apos;teach introduction to python course&apos;</span>,<span class="hljs-number">1000</span>)
 
+<span class="hljs-comment"># &#x5BF9;&#x8C61;s&#x5220;&#x9664;&#x4EFB;&#x52A1;&#x8BE6;&#x60C5;</span>
+s.remove_task(<span class="hljs-string">&apos;cs&apos;</span>)
 
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x5BF9;&#x8C61;s&#x4EFB;&#x52A1;</span>
 print(s)
 </code></pre>
 <blockquote>
-<p>@&#x88C5;&#x9970;&#x5668; &#x653E;&#x5230;&#x51FD;&#x6570;&#x524D;&#x9762;&#x662F;&#x4F7F;&#x7528;&#x88C5;&#x9970;&#x5668;&#x7684;&#x5FEB;&#x6377;&#x952E; <br>
-<code>*</code>&#x548C;<code>**</code> &#x662F;<code>&#x975E;&#x5173;&#x952E;&#x8BCD;</code>&#x53C2;&#x6570;&#x6536;&#x96C6;&#x548C;<code>&#x5173;&#x952E;&#x8BCD;</code>&#x53C2;&#x6570;&#x6536;&#x96C6;,&#x7528;&#x4E8E;&#x6536;&#x96C6;<code>&#x5217;&#x8868;</code>&#x548C;<code>&#x5B57;&#x5178;</code> <br></p>
+<p>@&#x88C5;&#x9970;&#x5668; &#x653E;&#x5230;&#x51FD;&#x6570;&#x6216;&#x65B9;&#x6CD5;&#x524D;&#x9762;&#x662F;&#x4F7F;&#x7528;&#x88C5;&#x9970;&#x5668;&#x4FEE;&#x9970;&#x51FD;&#x6570;&#x6216;&#x65B9;&#x6CD5;&#x7684;&#x5FEB;&#x6377;&#x952E; <br>
+<code>*</code>&#x548C;<code>**</code> &#x662F;<code>&#x975E;&#x5173;&#x952E;&#x8BCD;</code>&#x53C2;&#x6570;&#x6536;&#x96C6;&#x548C;<code>&#x5173;&#x952E;&#x8BCD;</code>&#x53C2;&#x6570;&#x6536;&#x96C6;,&#x7528;&#x4E8E;&#x4ECE;<code>&#x5217;&#x8868;</code>&#x548C;<code>&#x5B57;&#x5178;</code>&#x4E2D;&#x6536;&#x96C6;&#x53C2;&#x6570; <br></p>
 </blockquote>
 
                                 
@@ -596,7 +825,7 @@ print(s)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"05-decorator","level":"1.3.5","depth":2,"next":{"title":"06-IO","level":"1.3.6","depth":2,"path":"chapter1/06-IO.md","ref":"chapter1/06-IO.md","articles":[]},"previous":{"title":"04-oop","level":"1.3.4","depth":2,"path":"chapter1/04-oop.md","ref":"chapter1/04-oop.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/05-decorator.md","mtime":"2018-03-09T02:27:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-09T02:32:00.461Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"05-decorator","level":"1.3.5","depth":2,"next":{"title":"06-IO","level":"1.3.6","depth":2,"path":"chapter1/06-IO.md","ref":"chapter1/06-IO.md","articles":[]},"previous":{"title":"04-oop","level":"1.3.4","depth":2,"path":"chapter1/04-oop.md","ref":"chapter1/04-oop.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/05-decorator.md","mtime":"2018-03-21T03:36:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T08:22:05.264Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -604,6 +833,10 @@ print(s)
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
